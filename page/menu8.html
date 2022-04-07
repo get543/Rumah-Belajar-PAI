@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <title>Bahan Ajar</title>
+
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/mapok.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <table class="framekonten">
+    <tbody>
+      <tr>
+        <td width="79%"><img src="logo_rumah_belajar.png" width="315" height="70"></td>
+        <td width="21%"><img src="logoOER70.png" width="201" height="70"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="framekonten">
+    <tbody>
+      <tr class="kosong" bgcolor="#999999">
+        <td colspan="3"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <table class="framekonten">
+      <tbody>
+        <tr>
+          <td class="framemenu1">
+            <div class="frameteksmenu">
+
+              <!-- ============================= M E N U ==================================== -->
+              <p class="matapelajaran">PAI</p>
+              <p class="judulmateri">Dakwah Nabi Muhammad SAW di Madinah</p>
+              <hr>
+              <p class="teksmenu"><a id="menu1" href="index.html">Pendahuluan</a></p>
+              <p class="teksmenu"><a id="menu2" href="menu2.html">Indikator</a></p>
+              <p class="teksmenu"><a id="menu3" href="menu3.html">Peristiwa Hijrah Nabi Muhammad SAW ke Madinah</a></p>
+              <p class="teksmenu"><a id="menu4" href="menu4.html">Perjuangan Nabi Muhammad SAW di Madinah</a></p>
+              <p class="teksmenu"><a id="menu5" href="menu5.html">Meneladani Perjuangan Nabi Muhammad SAW di Madinah</a>
+              </p>
+              <p class="teksmenu"><a id="menu6" href="menu6.html">Latihan </a></p>
+              <p class="teksmenu"><a id="menu7" href="menu7.html">TES</a></p>
+              <p class="teksmenu"><a id="menu8" href="menu8.html">Daftar Pustaka</a></p>
+              <p class="teksmenu"><a id="menu9" href="menu9.html">TIM</a></p>
+              <!-- ----------------------------- M E N U ------------------------------------- -->
+
+              <hr>
+              <div id="tambahan"></div>
+            </div>
+          </td>
+          <td class="frameisi">
+            <div class="frameteksisi">
+
+              <!-- ============================= M A T E R I ==================================== -->
+              <p class="judulmenu">Daftar Pustaka</p>
+              <hr>
+              <p><strong>Daftar Pustaka :</strong></p>
+              <ol start="1" type="1">
+                <li>Mustahdi dan Sumiyati, Pendidikan Agama Islam dan Budi Pekerti, Jakarta: Kemendikbud, 2013</li>
+                <li>Nasihin, dkk. Ayo Belajar Agam Islam, Jakarta: Airlangga, 2007.</li>
+              </ol>
+              <p>Link Terkait:</p>
+              <ol>
+                <li><a href="http://www.youtube.com/watch?v=iAs43ipZzCY" target="_blank"
+                    rel="noopener noreferrer">http://www.youtube.com/watch?v=iAs43ipZzCY</a></li>
+                <li><a href="http://prezi.com/awvdgsavbjgy/piagam-madinah/" target="_blank" rel="noopener noreferrer"">http://prezi.com/awvdgsavbjgy/piagam-madinah/</a></li>
+  <li><a href=" http://percikkisahnabi.blogspot.co.id/2013/05/perjalanan-hijrah-nabi-saw-ke-madinah.html"
+                    target="_blank"
+                    rel="noopener noreferrer">http://percikkisahnabi.blogspot.co.id/2013/05/perjalanan-hijrah-nabi-saw-ke-madinah.html</a>
+                </li>
+                <li><a href="http://diasdiari.blogspot.co.id/2014/01/dakwah-rasulullah-saw-periode-madinah.html"
+                    target="_blank"
+                    rel="noopener noreferrer">http://diasdiari.blogspot.co.id/2014/01/dakwah-rasulullah-saw-periode-madinah.html</a>
+                </li>
+                <li><a
+                    href="https://salwintt.wordpress.com/bahan-ajr-pai/materi-bahan-ajar/demokrasi/dakwah-nabi-muhammad-saw-di-madinah/"
+                    target="_blank"
+                    rel="noopener noreferrer">https://salwintt.wordpress.com/bahan-ajr-pai/materi-bahan-ajar/demokrasi/dakwah-nabi-muhammad-saw-di-madinah/</a>
+                </li>
+              </ol>
+              <!-- ------------------------------ M A T E R I ---------------------------------- -->
+
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    &nbsp;
+  </div>
+</body>
+
+</html>
+
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/bootstrap.js"></script>
+<!-- ============================= KHUSUS ANIMASI DAN SOAL ==================================== -->
+<script>
+  var ratioWidth = 660;
+  var ratioHeight = 440;
+  var isChrome = !!window.chrome && !!window.chrome.webstore;
+
+
+  $(document).ready(function () {
+    var timeOutFunction = false;
+    $(window).resize(function () {
+      if (timeOutFunction) clearTimeout(timeOutFunction);
+      setTimeout(updateImageSize, 100);
+    }).resize();
+
+    if (isChrome == true) {
+      alert("Perhatian!! MEDIA TIDAK SEMPURNA DI CHROME");
+    }
+
+  });
+
+  function updateImageSize() {
+    var objectWidth = $('.objek').width();
+    var objectHeight = ratioHeight / ratioWidth * objectWidth;
+    $('.objek').height(objectHeight);
+  };
+</script>
+<!-- -------------------------------- KHUSUS ANIMASI DAN SOAL ---------------------------------------- -->
